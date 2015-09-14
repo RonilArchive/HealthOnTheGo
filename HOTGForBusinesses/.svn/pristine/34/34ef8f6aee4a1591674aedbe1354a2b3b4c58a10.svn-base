@@ -1,0 +1,121 @@
+@CHARSET "US-ASCII";
+
+
+#TabStrip p
+{
+position:absolute;	
+top:5%;	
+color:white;
+	
+	
+}
+
+
+.Steps-Forms
+{
+	
+position:absolute;	
+top:90px;
+left:5%;
+background:none;
+height:82%;
+width:90%;
+z-index:40;
+}
+
+.Order-Input
+{
+	
+position:absolute;
+left:7%;
+top:10%;
+height:9%;
+width:40%;  
+font-family: HOTGFont;
+font-size:22px;
+color:black;
+opacity:0.9;
+border:solid;
+/*border-width:2px;*/
+border-color:grey;
+z-index:60;
+}
+
+#Doc-type
+{
+position:absolute;	
+left:7%;
+top:19%;
+height:70%;
+width:39.3%;
+background-color:rgba(66, 185, 11, 0.9);
+overflow:scroll;
+opacity:0.8;
+border:solid 4px grey;
+border-top:none;
+}
+
+#Shopping-Cart-Div
+{
+	
+position:absolute;	
+left:55%;
+top:19%;
+height:68%;
+width:40%;
+background-color:black;
+overflow:scroll;
+opacity:0.8;
+border:solid 8px silver;	
+	
+}
+
+.Inventory-list
+{
+position:relative;
+width:100%;	
+height:18%;
+background-color:rgb(9, 46, 0);
+border:solid 2px green;
+}
+
+.Inventory-list h1
+{
+position:absolute;
+top:9.5%;
+width:100%;
+text-align:center;
+margin:0;
+padding:0;
+font-size:20px;
+color:white;
+font-family:HOTGFont;
+}
+
+.Inventory-list p
+{
+position:absolute;
+left:6%;
+top:60%;
+width:100%;
+text-align:left;
+margin:0;
+padding:0;
+font-size:12px;
+color:rgb(155, 116, 255);
+font-family:HOTGFont;
+}
+
+
+.Inventory-list button
+{
+position:absolute;
+top:60%;
+width:30%;
+left:64%;
+margin:0;
+padding:0;
+font-size:12px;
+color:black;
+font-family:HOTGFont;
+}

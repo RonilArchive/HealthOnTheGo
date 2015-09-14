@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	
+    <servlet>
+        <servlet-name>insertLab</servlet-name>
+        <servlet-class>hotgboss.insertLab</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>insertMedicine</servlet-name>
+        <servlet-class>hotgboss.insertMedicine</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>insertChemist</servlet-name>
+        <servlet-class>hotgboss.insertChemist</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>getMedicine</servlet-name>
+        <servlet-class>hotgboss.getMedicine</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>excludeMedicineServlet</servlet-name>
+        <servlet-class>hotgboss.excludeMedicineServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>insertTest</servlet-name>
+        <servlet-class>hotgboss.insertTest</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>includeMedicineServlet</servlet-name>
+        <servlet-class>hotgboss.includeMedicineServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>insertStreet</servlet-name>
+        <url-pattern>/insertStreet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>insertCollector</servlet-name>
+        <url-pattern>/insertCollector</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>insertLab</servlet-name>
+        <url-pattern>/insertLab</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>insertMedicine</servlet-name>
+        <url-pattern>/insertMedicine</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>insertChemist</servlet-name>
+        <url-pattern>/insertChemist</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>getMedicine</servlet-name>
+        <url-pattern>/getMedicine</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>excludeMedicineServlet</servlet-name>
+        <url-pattern>/excludeMedicineServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>insertTest</servlet-name>
+        <url-pattern>/insertTest</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>includeMedicineServlet</servlet-name>
+        <url-pattern>/includeMedicineServlet</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>login.html</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <description>Sample Servlet</description>
+        <display-name>hotgadminServlet</display-name>
+        <servlet-name>hotgadminServlet</servlet-name>
+        <servlet-class>hotgboss.HOTGAdminServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>insertStreet</servlet-name>
+        <servlet-class>hotgboss.insertStreet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>insertCollector</servlet-name>
+        <servlet-class>hotgboss.insertCollector</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>hotgadminServlet</servlet-name>
+        <url-pattern>/hotgadmin</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description>validate Administrator</description>
+        <display-name>validateAdmin</display-name>
+        <servlet-name>validateAdmin</servlet-name>
+        <servlet-class>hotgboss.validateAdmin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>validateAdmin</servlet-name>
+        <url-pattern>/validateAdmin</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>updateMedicine</servlet-name>
+        <servlet-class>hotgboss.updateMedicine</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateMedicine</servlet-name>
+        <url-pattern>/updateMedicine</url-pattern>
+    </servlet-mapping>
+    
+</web-app>

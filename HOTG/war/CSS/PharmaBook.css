@@ -1,0 +1,409 @@
+@CHARSET "US-ASCII";
+
+
+#TabStrip p
+{
+position:absolute;	
+top:5%;	
+color:white;
+font-size:14px;
+font-family:arial;
+	
+}
+
+.GreenButton
+{
+	
+	height:35px;
+	width:200px;
+	font-family:arial;
+	background-color:rgb(173, 0, 0);
+	color:white;
+	border:0;
+	padding:5px;
+}
+
+.GreenButton:hover
+{
+	color:black;
+}
+
+.Steps-Forms
+{
+	
+position:absolute;	
+top:90px;
+left:5%;
+background:none;
+height:680px;
+width:90%;
+z-index:40;
+overflow:auto;
+/*background-color:rgba(63, 62, 62, 0.47);*/
+/*border:3px solid black;*/
+/*box-shadow:2px 2px 12px black;*/
+}
+
+.Order-Input
+{
+	
+position:absolute;
+left:1.5%;
+top:11%;
+height:5%;
+width:52%;  
+font-family: HOTGFont;
+font-size:18px;
+color:black;
+opacity:0.9;
+border:1px solid rgb(206, 203, 203);
+/*border-width:2px;*/
+
+z-index:60;
+box-shadow: 4px 4px 8px #888888;
+
+
+}
+
+#Inventory-Div
+{
+position:absolute;	
+left:1.5%;
+top:18%;
+height:400px;
+width:52.5%;
+background-color:white;
+overflow:auto;
+opacity:0.8;
+border:solid 1px grey;
+border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;
+border-top-left-radius: 4px;
+border-top-right-radius: 4px;
+box-shadow: 2px 8px 20px #888888;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+}
+
+.Inventory-List
+{
+position:relative;
+width:100%;	
+height:22%;
+background-color:white;
+  /*background-repeat: repeat-x;
+  background-size:1.5%;*/
+border-bottom:solid 2px red;
+
+}
+
+.Inventory-List h1
+{
+position:relative;
+top:9.5%;
+width:100%;
+text-align:center;
+margin:0;
+padding:0;
+font-size:10.5px;
+/*color:rgb(6, 26, 179);*/
+color:black;
+font-family:HOTGFont;
+padding-bottom:9px;
+}
+
+.Inventory-List h2
+{
+position:relative;
+top:9.5%;
+width:99.6%;
+left:0.4%;
+margin:0;
+padding:0;
+font-size:10.5px;
+/*color:rgb(50, 66, 189);*/
+color:rgb(90, 90, 90);
+font-family:arial;
+}
+
+
+.Inventory-List p
+{
+position:absolute;
+left:0.5%;
+top:60%;
+width:99.5%;
+text-align:left;
+margin:0;
+padding:0;
+font-size:10px;
+/*color:rgb(50, 66, 189);*/
+/*color:rgb(90, 90, 90);*/
+color:rgb(138, 3, 3);
+font-family:arial;
+padding-top:4px;
+font-weight:bold;
+}
+
+
+.Inventory-List button
+{
+position:absolute;
+top:68%;
+width:21%;
+left:75%;
+margin:0;
+padding:0;
+font-size:11px;
+font-family:HOTGFont;
+opacity:1;
+background-color:rgb(173, 0, 0);
+color:white;
+border:0;
+padding:2px;
+
+}
+
+.Inventory-List .QtySelector
+{
+position:absolute;
+top:6%;
+height:18%;
+width:9%;
+left:87%;
+margin:0;
+padding:0;
+font-size:12px;
+color:black;
+font-family:HOTGFont;
+opacity:0.8;
+	
+}
+
+#Shopping-Cart-Div
+{
+	
+position:absolute;	
+left:60.5%;
+top:18%;
+height:400px;
+width:37%;
+background-color:black;
+overflow:auto;
+opacity:0.7;
+/*border:solid 3px rgb(177, 0, 0);*/
+box-shadow:5px 2px 15px black;
+	
+}
+
+.Shopping-List
+{
+position:relative;
+width:100%;	
+height:23.5%;
+background-color:black;
+  background-repeat: repeat-x;
+  background-size:1.5%;
+border-bottom:solid 2px rgb(247, 5, 5);
+
+}
+
+.Shopping-List h1
+{
+position:relative;
+top:9.5%;
+width:100%;
+text-align:center;
+margin:0;
+padding:0;
+font-size:13px;
+color:white;
+font-family:HOTGFont;
+padding-bottom:9px;
+padding-top:5px;
+}
+
+.Shopping-List h2
+{
+position:relative;
+top:9.5%;
+width:99%;
+left:0.5%;
+margin:0;
+padding:0;
+font-size:11px;
+color:silver;
+font-family:HOTGFont;
+}
+
+
+.Shopping-List p
+{
+position:absolute;
+left:0.5%;
+top:60%;
+width:100%;
+text-align:left;
+margin:0;
+padding:0;
+font-size:10px;
+color:silver;
+font-family:HOTGFont;
+padding-top:4px;
+font-weight:bold;
+}
+
+
+.Shopping-List button
+{
+position:absolute;
+top:67%;
+width:35%;
+left:61.5%;
+height:20px;
+margin:0;
+padding:0;
+font-size:10px;
+color:black;
+font-family:HOTGFont;
+opacity:1;
+
+background-color:rgb(173, 0, 0);
+color:white;
+border:0;
+padding:2px;
+}
+
+.Shopping-List label
+{
+position:absolute;
+top:15%;
+width:16%;
+left:82%;
+margin:0;
+padding:0;
+font-size:14px;
+color:white;
+font-family:HOTGFont;
+opacity:0.8;
+}
+
+
+.ReceiptTable
+{
+font-size:16px;	
+float:left;
+margin-top:5%;
+width:100%;		
+font-family:HOTGFont;
+}
+
+#Review-Order-Form button
+{
+	float:left;
+	margin-left:40%;
+	margin-top:2%;
+	height:35px;
+	width:200px;
+	font-family:arial;
+	background-color:rgb(173, 0, 0);
+	color:white;
+	border:0;
+	padding:5px;
+	
+	
+	
+	font-family:Arial;
+	
+	
+	
+}
+
+#Review-Order-Form button:hover
+{
+	color:black;
+	
+}
+
+.ReceiptTable td
+{
+border:1px solid #98bf21;
+padding: 2px 2px 2px 2px;	
+
+}
+
+.ReceiptTable tr.alt td
+{
+	
+	color:black;
+	background-color:#EAF2D3;
+	
+	
+}
+
+.Contact-Label
+{
+	color:rgb(139, 7, 7);
+	font-family:HOTGFont;
+	font-size:20px;	
+	
+}
+
+.Contact-Info
+{
+	color:black;
+	font-family:arial;
+	font-size:18px;	
+	height:5%;
+	/*border-top-left-radius:9px;
+	border-bottom-left-radius:9px;*/
+	solid 1px rgb(191, 196, 191)
+}
+
+#Contact-Details-Form button
+{
+	
+	position:relative;
+	left:40%;
+	top:-18px;
+	
+	height:35px;
+	width:140px;
+	font-family:arial;
+	background-color:rgb(173, 0, 0);
+	color:white;
+	border:0;
+	padding:5px;
+}
+
+#Contact-Details-Form button:hover
+{
+	color:black;
+	
+}
+
+#CustDataDiv
+{
+	
+position:absolute;
+top:10%;
+left:24%;	
+height:540px;
+width:55%;
+overflow:hidden;
+opacity:1;
+border:3px dashed rgb(177, 0, 7);
+}
+
+#SubCustData
+{
+	position:relative;
+	padding:8px;
+	left:5%;
+	
+}
+
+
+

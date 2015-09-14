@@ -1,0 +1,8 @@
+@CHARSET "US-ASCII";
+
+  @font-face
+		{
+		font-family: HOTGFont;
+		src: url('../Fonts/Aller_Rg.ttf');
+		
+		}

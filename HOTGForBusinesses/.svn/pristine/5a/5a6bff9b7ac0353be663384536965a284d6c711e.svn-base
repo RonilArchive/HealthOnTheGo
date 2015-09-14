@@ -1,0 +1,40 @@
+@CHARSET "US-ASCII";
+
+
+
+
+  .Menuspan
+  {
+  position: fixed;
+  left: 0%;
+  top:0%;
+  height:44px;
+  width:100%;
+  background-image:url('../Pictures/HOTG_Web_MenuColor_Plain.png');
+  background-repeat: repeat-x;
+  font-family: HOTGFont;
+  font-size:14px;
+  color:rgb(0, 73, 3);
+  z-index:10;
+  }
+  
+  .MenuButton
+  {
+  float:right;
+  height:19px;
+  padding-left:20px;
+  padding-right:20px;
+  padding-top:14px;
+  padding-bottom:8px;
+   background-image:url('../Pictures/HOTG_Web_MenuColor_Plain.png');
+  background-repeat: repeat-x;
+  }
+  
+  .MenuButton:hover
+  {
+  
+  border-bottom-style:solid;
+  border-width:4px;
+  border-color:rgb(224, 45, 45);
+  color:rgb(224, 45, 45);
+  }

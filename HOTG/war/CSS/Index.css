@@ -1,0 +1,709 @@
+@CHARSET "US-ASCII";
+
+
+  
+  
+  .LogoHolder
+  {
+  position:relative;
+  top:38px;
+  width:100%;
+  height:100px;
+  /*background-image:url('../Pictures/LogoHolderBG.png');*/
+  background-image:url('../Pictures/bg-header.png');
+  background-repeat:repeat-x;
+ background-size: auto 100%;
+ 
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+src='../Pictures/bg-header.png',
+sizingMethod='scale');
+
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
+src='../Pictures/bg-header.png',
+sizingMethod='scale')";
+  }
+  
+  .MapDiv
+  {
+  position:relative;
+  top:38px;
+  left:0%;
+  width:100%;
+  height:360px;
+  font-family: HOTGFont;
+  font-size:16px;
+  color:white;
+  /*box-shadow:0px -1px 2px black;*/
+  z-index:3;
+  }
+  
+  .Map
+  {
+  position:relative;
+  left:0%;
+  top:0%;
+  height:400px;
+  width:100%;
+  /*background-image:url('../Pictures/escheresque_ste.png');*/ 
+  /*background-size:100% 100%;
+  background-repeat: no-repeat;*/
+ /* background-repeat: repeat;*/ 
+ 
+ background-image:url('../Pictures/image1home.jpg');
+ background-size:100% 100%;
+  
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+src='../Pictures/WhereAreYouFinal.jpg',
+sizingMethod='scale');
+
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
+src='../Pictures/WhereAreYouFinal.jpg',
+sizingMethod='scale')";
+  
+  }
+  
+ 
+  
+  body 
+  { 
+  height: 0;
+  margin: 0; 
+  padding: 0;
+  min-width:1150px;
+  
+  }
+  
+ 
+  #map-canvas 
+  { 
+  height: 64%; 
+  width:35%;
+  position:absolute;
+  left:60%;
+  top:11.5%;
+  border: 4px solid rgb(51, 51, 51);
+  border-radius:2px;
+  opacity:0.7;
+  box-shadow:4px 6px 8px black;
+  }
+  
+  .SubLogoHolder
+  {
+  height:83px;
+  width:88px;
+  position:absolute;
+  overflow:hidden;
+  padding-left:4px;
+  padding-right:4px;
+  z-index:2;
+  -webkit-transition: left 1s; 
+  top:8.5px;
+  /*border:outset 1px rgba(138, 135, 135, 0.54);*/
+  border:outset 1px grey;
+  border-radius:10px;
+
+  }
+  
+ 
+  
+  .SubLogoHolder img
+  {
+  height:160px;
+  width:320px;
+  
+  }
+  
+  
+  
+  #HVLogo
+  {
+  position:relative;
+  left:17px;
+  top:-108px;
+  
+  }
+  
+   #HVLogo:hover
+  {
+  top:5px;
+  left:17px;
+  }
+  
+  #CLogo
+  {
+  position:relative;
+  left:-107px;
+  top:-106px;
+  }
+  
+   #CLogo:hover
+  {
+  top:7px;
+  left:-109px;
+  }
+  
+  #MLLogo
+  {
+  position:relative;
+  left:-246px;
+  top:-107px;
+  }
+  
+   #MLLogo:hover
+  {
+  left:-245px;
+  top:6px;
+  }
+
+  
+  
+  
+  .LocationDiv
+  {
+  position:absolute;
+  top:20.5%;
+  left:2%;
+  height: 36%;
+  width:55%;
+  /*background-image:url('../Pictures/LocationDiv.png'); */
+  /*background-size:100% 100%; */
+  border:1px solid none;
+ /* border-radius:8px; */
+ /* box-shadow:3px 3px 7px black; */
+ background-color:rgba(255,255,255,0.85);
+ 
+ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFF,endColorstr=#FFFFFF);
+    MsFilter:progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+  
+  }
+  
+  .LocationBox
+  {
+  height:25px;
+  width:25%;
+  position:absolute;
+  top:60px;
+  font-family: HOTGFont;
+  font-size:14px;
+  text-align:center;
+  color:black;
+  opacity:0.9;
+  border:2px solid;
+  /*border-width:2px;*/
+  border-color:grey;
+  z-index:6;
+  
+  }
+  
+  .LocationBox:disabled
+  {
+  opacity:0.6;
+  border:none;
+  background-color:rgb(255, 255, 219);
+  /*border:1px solid grey;*/
+  }
+  
+  
+  .HomeDescriptionCashOnDelivery
+  {
+  position:absolute;
+  top:73%;
+  left:63%;
+  height: 12%;
+  width:28%;
+   background-color:rgba(255, 255, 255,0.9);
+   
+   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFF,endColorstr=#FFFFFF);
+    MsFilter:progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  }
+  
+  .HomeDescriptionCashOnDelivery div
+  {
+  position:absolute;
+  height:64%;
+  width:92%;
+  left:4%;
+  top:15%;
+   background-color:rgba(255,255,255,0);
+  border: 1px solid silver;
+  transition:0.15s ease-out background-color;
+  -webkit-transition:0.15s ease-out background-color;
+  -moz-transition:0.15s ease-out background-color;
+  -o-transition:0.15s ease-out background-color;
+  
+  
+   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFF,endColorstr=#FFFFFF);
+    MsFilter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  }
+  
+  .HomeDescriptionCashOnDelivery div:hover
+  {
+  background-color:rgba(255,255,255,0.8);
+
+   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFF,endColorstr=#FFFFFF);
+    MsFilter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  }
+  
+  .HomeDescriptionCashOnDelivery p
+  {
+  color:black;
+  position:absolute;
+  left:34%;
+  top:21%;
+  font-family:arial;
+  font-weight:bold;
+  margin:0;
+  padding:0;
+  }
+  
+  .HomeDescriptionHolder
+  {
+   position:absolute;
+  top:6.8%;
+  left:63%;
+  height: 63.7%;
+  width:28%;
+   background-color:rgba(255, 255, 255,0.9);
+   
+   
+   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFF,endColorstr=#FFFFFF);
+    MsFilter:progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  }
+  
+  .HomeDescriptionHolderContent
+  {
+  position:absolute;
+  height:41%;
+  width:44%;
+   background-color:rgba(255,255,255,0);
+  border: 1px solid silver;
+  transition:0.15s ease-out background-color;
+  -webkit-transition:0.15s ease-out background-color;
+  -moz-transition:0.15s ease-out background-color;
+  -o-transition:0.15s ease-out background-color;
+  
+  
+   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFF,endColorstr=#FFFFFF);
+    MsFilter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  }
+  
+  .HomeDescriptionHolderContent img
+  {
+  position:absolute;
+  top:12%;
+  left:35%;
+  height:44%;
+  width:27%;
+  }
+  
+  .HomeDescriptionHolderContent p
+  {
+  color:grey;
+  position:absolute;
+  top:55%;
+  left:0%;
+  width:100%;
+  text-align:center;
+  }
+  
+   .HomeDescriptionHolderContent h4
+  {
+  color:silver;
+  position:absolute;
+  top:0%;
+  left:2.5%;
+  text-align:center;
+  padding:0;
+  margin:0;
+  }
+   
+  .HomeDescriptionHolderContent:hover
+  {
+  background-color:rgba(255,255,255,0.8);
+  
+   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFF,endColorstr=#FFFFFF);
+    MsFilter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  }
+  
+  .HomeDescriptionHolderTL
+  {
+  top:6%;
+  left:4%;
+  }
+  
+  .HomeDescriptionHolderTR
+  {
+  top:6%;
+  left:52%;
+  }
+  
+  .HomeDescriptionHolderBL
+  {
+  top:53%;
+  left:4%;
+  }
+  
+  .HomeDescriptionHolderBR
+  {
+  top:53%;
+  left:52%;
+  }
+  
+  .List-Div
+  {
+  margin-top:10px;
+  height:140px;
+  width:26%;
+  position:absolute;
+  top:98px;
+  z-index:3;
+  font-family: HOTGFont;
+  font-size:15px;
+  color:black;
+  opacity:0.8;
+  border:none;
+  background-color:rgb(300, 8, 42);
+  overflow:auto;
+  padding:0;
+  margin:0;
+  box-shadow: 4px 6px 6px black;
+  border-radius:4px;
+  
+   MsFilter:progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+   filter: alpha(opacity=90);
+    MozOpacity : 0.9;
+    KhtmlOpacity" : 0.9;  
+  opacity:0.9;
+  
+ 
+  }
+  
+  
+  .List-Div li
+  {
+  padding:0;
+  margin:0;
+  Position:relative;
+  left:0;
+  font-size:14px;
+  background-color:rgba(218, 8, 42, 0.9);
+ border: solid 1px black;
+  border-bottom:none;
+  text-align:center;
+  color:white;
+  width:99%;
+  padding-top:3px;
+  padding-bottom:3px;
+  }
+  
+  body .UnList-Li
+  {
+  padding:0;
+  margin:0;
+  Position:relative;
+  left:0;
+  font-size:0px;
+ border: none;
+  border-bottom:none;
+  text-align:center;
+  color:white;
+  width:0;
+ 
+  }
+  
+ 
+  
+  
+  .List-Div li:hover
+  {
+  background-color:red;
+  }
+  
+  .List-Div ul
+  {
+  padding:0;
+  margin:0;
+  Position:relative;
+  left:0;
+  background-color:rgba(218, 8, 42, 0.9);
+  border-bottom:solid 1px black;
+  list-style-type: none;
+  }
+  
+  .slider {
+   
+  height:355px;
+  position:relative;
+  top:36px;
+  z-index:-1;
+  overflow:auto;
+    }
+   
+  .slider li { 
+    list-style: none;
+	 
+}
+
+.slider ul
+{
+	padding:0;
+	 margin:0;
+	
+}
+    
+.slider ul li { 
+	
+	float: left; 
+    min-height:355px;
+    background-size:100%;
+    
+    
+        }
+
+.slider h1
+{
+	font-family:cursive;
+	display:block;
+	color:white;
+	-webkit-font-smoothing:antialiased;
+	text-shadow:0 0 1px rgba(0,0,0,.05), 0 1px 2px rgba(0,0,0,.3);
+	
+	text-align:center;
+	font-weight:500;
+	font-size:30px;
+}
+
+.slider p
+{
+	position:absolute;
+	font-family:arial;
+	display:block;
+	color:rgb(196, 196, 196);
+	margin:0;
+	padding:0;
+	top:230px;
+	
+	font-size:16px;
+}
+        
+        
+  
+ /* .WordsAboutUs
+  {
+  background-image:url('../Pictures/DOCTOR.jpg');
+  background-size:100% 100%;
+  width:100%;
+  height:500px;
+  position:absolute;
+  top:537px;
+  left:0%;
+  z-index:-1;
+  font-family: HOTGFont;
+  font-size:16px;
+  }
+  
+  .WordsAboutUs p
+  {
+  
+  text-align:left;
+  width:60%;
+  position:relative;
+  left:30%;
+  font-size:18px;
+  }
+  */
+  
+  .Testimonial
+  {
+  background-image:url('../Pictures/escheresque_ste.png');
+  background-repeat:repeat;
+  width:100%;
+  height:380px;
+  position:relative;
+  top:35px;
+  left:0%;
+ /* box-shadow:0px -3px 4px black;*/
+  z-index:3;
+  }
+  
+  .Testimonial img
+  {
+  position:relative;
+  width:80%;
+  height:240px;
+  left:10%;
+  
+  }
+  
+  a
+  {
+  text-decoration:inherit;
+  color:inherit;
+  }
+  
+  
+  #Services_Menu
+  {
+  
+  height:0px;
+  width:30%;
+  position:absolute;
+  top:0px;
+  left:64.5%;
+  z-index:1;
+  font-family: HOTGFont;
+  font-size:22px;
+  color:black;
+  opacity:0.8;
+  border:none;
+  background-color:black;
+  overflow:auto;
+  padding:0;
+  margin:0;
+  border: 2px solid red;
+  }
+  
+  #Overlay
+  {
+   position:fixed;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  opacity:0.6;
+  background : #000;
+  zIndex:5000;
+  MsFilter:progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+   filter: alpha(opacity=60);
+    MozOpacity : 0.6;
+    KhtmlOpacity" : 0.6;  
+  
+  }
+  
+  .Loc-Load-Filler
+  {
+  position:absolute;
+  left:45%;
+  top:45%;
+  height:10%;
+  width:5%;
+  
+  }
+  
+  
+  
+  .dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  text-align: center;
+}
+
+.dots li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+  text-indent: -999em;
+  border: 2.2px solid black;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: .4;
+  -webkit-transition: background .5s, opacity .5s;
+  -moz-transition: background .5s, opacity .5s;
+  transition: background .5s, opacity .5s;
+}
+
+.dots li.active {
+  background: #fff;
+  opacity: 1;
+}
+
+#WhiteBeltText
+{
+	position:absolute;
+	left:3%;
+	top:-736px;
+	width:70%;
+	font-size:17px;
+	z-index:6;
+	//background:green;
+	font-family:HOTGFont;
+	/*color:rgba(105, 0, 0, 0.84);*/
+	/*color:rgba(87, 87, 87, 0.84);*/
+	color:white;
+	
+}
+
+#PageBreakMap
+{
+position:absolute;
+	left:0%;
+	top:0px;
+	width:100%;
+	height:1px;	
+	background-color:rgb(173, 0, 0);
+}
+
+#WhiteBeltText ul
+{
+
+	
+	
+	
+}
+
+
+.FlowHelper
+{
+	
+	color:white;
+	background-color:rgb(173, 0, 0);
+	font-size:14px;
+	/*box-shadow:3px 3px 5px rgb(97, 92, 92); */
+	font-family:HOTGFont;
+}
+
+.FlowHelper:hover
+{
+	
+	
+	color:silver;
+	
+}
+
+@keyframes SelectService
+{
+0%   {background:none;}
+10%  {background:green;}
+20%  {background:none;}
+30% {background:green;}
+40%  {background:none;}
+50%   {background:green;}
+60%  {background:none;}
+70%  {background:green;}
+80% {background:none;}
+90%  {background:green;}
+100% {background:none;}
+}
+
+@-webkit-keyframes SelectService /* Safari and Chrome */
+{
+0%   {background:none;}
+10%  {background:green;}
+20%  {background:none;}
+30% {background:green;}
+40%  {background:none;}
+50%   {background:green;}
+60%  {background:none;}
+70%  {background:green;}
+80% {background:none;}
+90%  {background:green;}
+100% {background:none;}
+}
+  
+  
+ a > img{
+    border: 0;
+} 

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	
+	
+	<servlet>
+		<servlet-name>LoginMobileLab</servlet-name>
+		<servlet-class>hotgb.LoginMobileLab</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginMobileLab</servlet-name>
+		<url-pattern>/LoginMobileLab</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ChangeTestStatus</servlet-name>
+		<servlet-class>hotgb.ChangeTestStatus</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ChangeTestStatus</servlet-name>
+		<url-pattern>/ChangeTestStatus</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ChangeDateList</servlet-name>
+		<servlet-class>hotgb.ChangeDateList</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ChangeDateList</servlet-name>
+		<url-pattern>/ChangeDateList</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ChangeTimeList</servlet-name>
+		<servlet-class>hotgb.ChangeTimeList</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ChangeTimeList</servlet-name>
+		<url-pattern>/ChangeTimeList</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EnableTime</servlet-name>
+		<servlet-class>hotgb.EnableTime</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EnableTime</servlet-name>
+		<url-pattern>/EnableTime</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DisableTime</servlet-name>
+		<servlet-class>hotgb.DisableTime</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DisableTime</servlet-name>
+		<url-pattern>/DisableTime</url-pattern>
+	</servlet-mapping>
+	
+	
+	 <servlet>
+        <servlet-name>cValidate</servlet-name>
+        <servlet-class>hotgb.cValidate</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>update_chemist_screen</servlet-name>
+        <servlet-class>hotgb.update_chemist_screen</servlet-class>
+    </servlet>
+<servlet-mapping>
+        <servlet-name>cValidate</servlet-name>
+        <url-pattern>/cValidate</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>update_chemist_screen</servlet-name>
+        <url-pattern>/update_chemist_screen</url-pattern>
+    </servlet-mapping>
+    
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
+
+

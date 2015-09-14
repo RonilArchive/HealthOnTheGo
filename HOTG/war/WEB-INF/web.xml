@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>City_location</servlet-name>
+		<servlet-class>hotg.City_location</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>City_location</servlet-name>
+		<url-pattern>/cityloc</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Pharma_list_items</servlet-name>
+		<servlet-class>hotg.Pharma_list_items</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Pharma_list_items</servlet-name>
+		<url-pattern>/Pharma_list_items_loc</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Add_Session_Parameters</servlet-name>
+		<servlet-class>hotg.Add_Session_Parameters</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Add_Session_Parameters</servlet-name>
+		<url-pattern>/Add_Session_Parameters_loc</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Remove_Session_Parameters</servlet-name>
+		<servlet-class>hotg.Remove_Session_Parameters</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Remove_Session_Parameters</servlet-name>
+		<url-pattern>/Remove_Session_Parameters</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Area_location</servlet-name>
+		<servlet-class>hotg.Area_location</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Area_location</servlet-name>
+		<url-pattern>/arealoc</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Street_location</servlet-name>
+		<servlet-class>hotg.Street_location</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Street_location</servlet-name>
+		<url-pattern>/streetloc</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetCart</servlet-name>
+		<servlet-class>hotg.GetCart</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetCart</servlet-name>
+		<url-pattern>/GetCart</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CheckStreetStatus</servlet-name>
+		<servlet-class>hotg.CheckStreetStatus</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CheckStreetStatus</servlet-name>
+		<url-pattern>/checkstreetstatus</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UpsertCustData</servlet-name>
+		<servlet-class>hotg.UpsertCustData</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpsertCustData</servlet-name>
+		<url-pattern>/upsertcustdata</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>FinalConfirmation</servlet-name>
+		<servlet-class>hotg.FinalConfirmation</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FinalConfirmation</servlet-name>
+		<url-pattern>/finalconfirmation</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Pathological_Tests_List</servlet-name>
+		<servlet-class>hotg.Pathological_Tests_List</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Pathological_Tests_List</servlet-name>
+		<url-pattern>/Pathological_Tests_List</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Submit_Time_mlab</servlet-name>
+		<servlet-class>hotg.Submit_Time_mlab</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Submit_Time_mlab</servlet-name>
+		<url-pattern>/Submit_Time_mlab</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Add_test_to_session</servlet-name>
+		<servlet-class>hotg.Add_test_to_session</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Add_test_to_session</servlet-name>
+		<url-pattern>/Add_test_to_session</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>check_test_session_presence</servlet-name>
+		<servlet-class>hotg.check_test_session_presence</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>check_test_session_presence</servlet-name>
+		<url-pattern>/check_test_session_presence</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Change_time_list</servlet-name>
+		<servlet-class>hotg.Change_time_list</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Change_time_list</servlet-name>
+		<url-pattern>/Change_time_list</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>UpsertcustdataML</servlet-name>
+		<servlet-class>hotg.UpsertcustdataML</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpsertcustdataML</servlet-name>
+		<url-pattern>/upsertcustdataML</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>FinalconfirmationML</servlet-name>
+		<servlet-class>hotg.FinalconfirmationML</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FinalconfirmationML</servlet-name>
+		<url-pattern>/FinalconfirmationML</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>SendFeedback</servlet-name>
+		<servlet-class>hotg.SendFeedback</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SendFeedback</servlet-name>
+		<url-pattern>/SendFeedback</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+    <servlet-name>Upload</servlet-name>
+    <servlet-class>hotg.Upload</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Upload</servlet-name>
+    <url-pattern>/upload</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>Serve</servlet-name>
+    <servlet-class>hotg.Serve</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Serve</servlet-name>
+    <url-pattern>/serve</url-pattern>
+  </servlet-mapping>
+ 
+  
+ <servlet>
+    <servlet-name>LogIn</servlet-name>
+    <servlet-class>hotg.LogIn</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogIn</servlet-name>
+    <url-pattern>/LogIn</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Register</servlet-name>
+    <servlet-class>hotg.Register</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Register</servlet-name>
+    <url-pattern>/Register</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>hotg.Logout</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/Logout</url-pattern>
+  </servlet-mapping>
+  
+	
+	  <servlet>
+    <servlet-name>RetrievePassword</servlet-name>
+    <servlet-class>hotg.RetrievePassword</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RetrievePassword</servlet-name>
+    <url-pattern>/RetrievePassword</url-pattern>
+  </servlet-mapping>
+  
+  
+	  <servlet>
+    <servlet-name>SendEnquiryCS</servlet-name>
+    <servlet-class>hotg.SendEnquiryCS</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SendEnquiryCS</servlet-name>
+    <url-pattern>/SendEnquiryCS</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>AddOldImgToCart</servlet-name>
+    <servlet-class>hotg.AddOldImgToCart</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddOldImgToCart</servlet-name>
+    <url-pattern>/AddOldImgToCart</url-pattern>
+  </servlet-mapping>
+  
+  
+	<session-config>
+    <session-timeout>20</session-timeout>
+</session-config>
+	
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
